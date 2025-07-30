@@ -1,0 +1,104 @@
+===============================
+💳 CC KILLER - README & SETUP
+===============================
+
+📁 Project Structure:
+---------------------
+Place all files like this:
+
+CC_KILLER/
+├── iron8.py               → Launcher script
+└── module/
+    ├── STRIPE_KILLER.py
+    ├── PAYPAL_KILLER.py
+    ├── SQUARE_KILLER.py
+    ├── BRAINTREE_KILLER.py
+    ├── AUTHORIZE_KILLER.py
+    └── SSLCommerz_KILLER.py
+
+
+📦 Installation Instructions:
+------------------------------
+Open terminal in CC_KILLER folder and run:
+
+> pip install requests braintree authorizenet
+
+⚠️ NOTE: You do NOT need PHP for any of the killers, including PayPal.  
+Everything works in Python only.
+
+
+🛠️ Edit API Keys Before Use:
+------------------------------
+
+1️⃣ STRIPE_KILLER.py
+--------------------
+File: module/STRIPE_KILLER.py  
+Search for:
+    api_key = "your_stripe_secret_key"  
+Replace with your actual Stripe secret key.
+
+
+2️⃣ PAYPAL_KILLER.py
+---------------------
+File: module/PAYPAL_KILLER.py  
+Search for:
+    client_id = "your_paypal_client_id"  
+    client_secret = "your_paypal_client_secret"  
+Replace with your PayPal API credentials from developer dashboard.  
+✅ No PHP required.
+
+
+3️⃣ SQUARE_KILLER.py
+---------------------
+File: module/SQUARE_KILLER.py  
+Search for:
+    access_token = "your_square_access_token"  
+Replace with your Square Access Token.
+
+
+4️⃣ BRAINTREE_KILLER.py
+------------------------
+File: module/BRAINTREE_KILLER.py  
+Search for:
+    braintree_config = {
+        "merchant_id": "your_merchant_id",
+        "public_key": "your_public_key",
+        "private_key": "your_private_key"
+    }  
+Replace with your Braintree credentials.
+
+
+5️⃣ AUTHORIZE_KILLER.py
+------------------------
+File: module/AUTHORIZE_KILLER.py  
+Search for:
+    api_login_id = "your_api_login_id"  
+    transaction_key = "your_transaction_key"  
+Replace with your Authorize.Net credentials.
+
+
+6️⃣ SSLCommerz_KILLER.py
+-------------------------
+File: module/SSLCommerz_KILLER.py  
+Search for:
+    store_id = "your_store_id"  
+    store_passwd = "your_store_password"  
+Replace with your SSLCommerz Store ID and Password.
+
+
+🚀 How to Run:
+--------------
+From terminal or command prompt:
+
+> python iron8.py
+
+Use number keys to select the gateway you want to test.
+
+
+📞 Support:
+-----------
+If you face issues, make sure:
+- Python 3.7+ is installed
+- Required Python modules are installed
+- Internet connection is active
+- All API credentials are correct
