@@ -115,4 +115,4 @@ This tool is intended strictly for:
 
 ---
 
-## ❤️ Made with love in Termux & Kali Linux
+## ❤️ Made for Termux & Kali Linux
